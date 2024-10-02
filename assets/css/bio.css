@@ -91,3 +91,59 @@ html, body{
     line-height: 2rem;
     color: white;
 }
+
+/* Responsive adjustments for phones */
+@media (max-width: 768px) {
+    .body_bio {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "nav"
+            "title"
+            "bio"
+            "socials"
+            "footer";
+    }
+
+    .bio {
+        height: 15rem;
+    }
+
+
+    .biography {
+        width: 90%; /* Ensure it fits within the screen */
+        margin-top: 3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "image1"
+            "description1"
+            "image2"
+            "description2";
+        grid-gap:0.8rem;
+    }
+
+    .image_wrap {
+        width: 90%; /* Ensure it fits within the screen */
+        margin-top: 3rem;
+    }
+
+    .wrapped_image {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-bottom: 1rem;
+        max-width: 150px; /* Control image size for mobile */
+        max-height: 150px;
+        margin-right: 2rem;
+    }
+
+    .image_wrap p{
+        line-height: 1.3rem;
+    }
+
+    .biography p {
+        line-height: 1.3rem;
+    }
+    
+}

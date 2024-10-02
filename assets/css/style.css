@@ -187,6 +187,7 @@ p {
     text-decoration: underline;
     text-underline-offset: 0.7rem;
     text-decoration-thickness: 0.1rem;
+    margin-top: 2rem;
 }
 
 .socialmedia {
@@ -202,5 +203,26 @@ p {
 .social {
     width: 4rem;
     height: 4rem;
+}
+
+@media (max-width: 768px) {
+    body{
+        grid-template-rows: auto;
+    }
+    .title{
+        width: 100%;
+    }
+    .sociallinks h2{
+        margin-top: 2rem;
+    }
+    section.featured {
+        margin-top: 0;
+    }
+    .open-navigation {
+        width: 100%;
+    }
+    .navigation{
+        margin-right:1rem;
+    }
 }
 

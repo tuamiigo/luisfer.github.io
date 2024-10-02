@@ -28,3 +28,25 @@ html, body{
     margin-top: 5rem;
 
 }
+
+/* Responsive adjustments for phones */
+@media (max-width: 768px) {
+    .body_contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "nav"
+            "title"
+            "socials"
+            "footer";
+    }
+
+    .contact {
+        height: 15rem;
+    }
+
+    .contactme {
+        width: 90%;
+        margin-top: 2rem;
+    }
+}
