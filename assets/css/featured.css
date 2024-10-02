@@ -1,0 +1,57 @@
+.featured{
+    width: 100%;
+    grid-area: feature;
+    margin-top: 5rem;
+}
+
+.featured h2{
+    color: #000;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+    text-decoration-thickness: 0.1rem;
+}
+
+.featured_artists{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.featured_artists li{
+    margin: 1rem;
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    color: #FFF;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.featured_images{  
+    width: 80%;
+    height: 80%; 
+    object-fit: cover;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+.featured_artists a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.hovering_artist{
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: transform 0.5s ease-in-out;
+}

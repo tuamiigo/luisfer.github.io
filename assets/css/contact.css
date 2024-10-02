@@ -1,0 +1,30 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.body_contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.5fr auto;
+    grid-template-areas: "nav nav"
+        "title title"
+        "socials socials"
+        "footer footer";
+}
+.contact {
+    background-image: url("../../images/estudio2.JPG");
+    grid-area: title;
+    height: 25rem;
+    background-position: center center;
+    
+}
+
+.contactme{
+    grid-area: socials;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5rem;
+
+}

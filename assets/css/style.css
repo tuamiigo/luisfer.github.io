@@ -1,0 +1,205 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    animation-name: fade;
+    animation-duration: 4s;
+}
+body {
+    background: linear-gradient(180deg, rgba(190,190,190,1) 5%, rgba(142,140,137,1) 100%); 
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.4fr 0.1fr 1fr auto;
+    grid-template-areas: "nav nav"
+        "title title"
+        "socials socials"
+        "feature feature"
+        "footer footer";
+    overflow-x: hidden;
+    margin: 0;
+    
+    
+}
+
+
+
+
+nav {
+    grid-area: nav;
+    justify-self: end;
+    width: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+        ". image"
+        "description description";
+}
+
+nav ul {
+    margin: 1rem auto;
+    grid-area: description;
+    
+
+}
+
+nav ul li {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    grid-area: title1;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    grid-area: occupation;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+p {
+    color: black;
+}
+
+.title {
+    grid-area: title;
+    background-image: url("../../images/cara.jpg");
+    background-color: rgb(183, 183, 183);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    width: 50%;
+    height: 20rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.7fr 1fr;
+    grid-gap: 1rem;
+    grid-template-areas:
+        ". . ."
+        ". title1 ."
+        ". occupation .";
+    
+
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.title a {
+    color: white;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.navigation {
+    cursor: pointer;
+    grid-area: nav;
+    justify-self: end;
+    max-width: 2rem;
+    height: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    transform: scale(1);
+}
+
+.navigation:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.hovering_item {
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: transform 0.5s ease-in-out;
+}
+
+.open-navigation {
+    grid-area: title;
+    background: linear-gradient(180deg, rgba(190,190,190,1) 5%, rgba(142,140,137,1) 100%); 
+    border-radius: 1rem;
+    margin: 5rem auto;
+    height: 20rem;
+    width: 50%;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+    
+}
+
+.open-navigation a{
+    color: #000;
+}
+
+.sociallinks {
+    grid-area: socials;
+    display: block;
+
+}
+
+.sociallinks h2{
+    color: #000;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+    text-decoration-thickness: 0.1rem;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia li {
+    padding: 1rem;
+    margin-right: 2rem;
+}
+
+.social {
+    width: 4rem;
+    height: 4rem;
+}
+
